@@ -20,9 +20,9 @@ public class TrustGateApplication {
     public CommandLineRunner testDb(UserRepository userRepository) {
         return args -> {
             User user = new User();
-            user.setUsername("tasin");
-            user.setEmail("tasin@example.com");
-            user.setPasswordHash("dummyhash"); // we’ll replace this with BCrypt later
+            user.setUsername("tasin3");
+            user.setEmail("tasin3@example.com");
+            user.setPasswordHash("dummyhash3"); // we’ll replace this with BCrypt later
             userRepository.save(user);
 
             System.out.println("Inserted user: " + user.getUsername());
